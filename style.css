@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat&family=Open+Sans:wght@300&family=Raleway:wght@300&family=Rubik&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat&family=Open+Sans:wght@300&family=Raleway:wght@300&family=Rubik&family=Sedgwick+Ave+Display&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat&family=Open+Sans:wght@300&family=Raleway:wght@300&family=Rubik&family=Rubik+Iso&family=Sedgwick+Ave+Display&display=swap');
+
+:root {
+    --animate-delay: 1s;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: #000000;
+    z-index: -1;
+}
+
+img {
+    position: fixed;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    min-height: 50vh;
+    min-width: 50vw;
+    overflow: hidden; 
+    z-index: 1;
+}
+
+section {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+}
+
+article {
+    margin-bottom: 2rem;
+}
+h1 {
+    font-family: 'Rubik Iso', cursive;
+    font-size: 10rem;
+}
+p {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 5rem;
+}
+
+
+button {
+    font-family: 'Black Ops One', cursive;
+    font-size: 3rem;
+    padding: 0 50px;
+    border-radius: .5rem;
+    text-align: center;
+    transition: all 0.5s;
+    width: 250px;
+}
+button a {
+    color: black;
+    text-decoration: none;
+}
+
+button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span::after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 15px;
+}
+button:hover span:after {
+    opacity: 1;
+    right: -35px;
+}
+
+
+
+
+
+
+
+
+
